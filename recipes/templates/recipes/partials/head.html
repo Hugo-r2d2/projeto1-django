@@ -99,6 +99,7 @@
 		}
 
 		/* Header Page */
+
 		.container {
 			/* Define a largura máxima do contêiner, centraliza e aplica padding */
 			max-width: 144rem;
@@ -130,6 +131,7 @@
 		}
 
 		/* Search Page */
+
 		.search-form {
 			/* Estiliza o formulário de busca, define bordas, largura máxima, margem, borda arredondada e transições */
 			border: .2rem solid var(--color-primary-dark);
@@ -181,6 +183,7 @@
 		}
 
 		/* Cards */
+
 		.main-content {
 			/* Define o padding superior da área de conteúdo principal */
 			padding-top: 0;
@@ -338,6 +341,31 @@
 			/* Define o estilo do botão ao clicar, incluindo leve afundamento */
 			transform: translateY(0.1rem);
 			/* Afunda o botão levemente ao clicar */
+		}
+
+		.recipe-footer a:hover {
+			filter: brightness(2);
+		}
+
+		/*FOOTER*/
+
+		.main-footer {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: var(--color-primary-dark);
+			color: var(--color-white);
+			padding: var(--spacing-gutter-large);
+		}
+
+		.main-footer a {
+			color: var(--color-white);
+			text-decoration: none;
+			transition: all 300ms ease-in-out;
+		}
+
+		.main-footer a:hover {
+			filter: brightness(.8);
 		}
 	</style>
 </head>
