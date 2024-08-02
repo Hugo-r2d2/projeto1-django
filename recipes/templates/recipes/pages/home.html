@@ -1,20 +1,16 @@
-{% include 'recipes/partials/head.html' %}
+{% extends "global/base.html" %}
 
-<body>
-	{% include 'recipes/partials/header.html' %}
+{% block 'content' %}
 
-	{% include 'recipes/partials/search.html' %}
+	<div class="main-content main-content-list container">
 
-	<main class="main-content-container">
-		<div class="main-content main-content-list container">
+		{% include 'recipes/partials/card_recipe.html' %}
+		{% include 'recipes/partials/card_recipe.html' %}
+		{% include 'recipes/partials/card_recipe.html' %}
+		{% include 'recipes/partials/card_recipe.html' %}
+		{% include 'recipes/partials/card_recipe.html' %}
+		{% include 'recipes/partials/card_recipe.html' %}
 
-			{% include 'recipes/partials/card_recipe.html' %}
+	</div>
 
-		</div>
-	</main>
-
-	{% include 'recipes/partials/footer.html' %}
-	
-</body>
-
-</html>
+{% endblock 'content' %}

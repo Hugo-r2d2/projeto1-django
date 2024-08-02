@@ -1,20 +1,11 @@
-{% include 'recipes/partials/head.html' %}
+{% extends "global/base.html" %}
 
-<body>
-	{% include 'recipes/partials/header.html' %}
+{% block 'content' %}
+	<div class="main-content main-content-detail container">
 
-	{% include 'recipes/partials/search.html' %}
+		{% include 'recipes/partials/card_recipe.html' %}
 
-	<main class="main-content-container">
-		<div class="main-content main-content-detail container">
+	</div>
 
-			{% include 'recipes/partials/card_recipe.html' %}
+{% endblock 'content' %}
 
-		</div>
-	</main>
-
-	{% include 'recipes/partials/footer.html' %}
-	
-</body>
-
-</html>

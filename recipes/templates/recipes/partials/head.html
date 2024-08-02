@@ -33,10 +33,10 @@
 			--color-primary-dark-hover: #212336;
 			--color-primary-light: #d4ecfa;
 			--color-primary-light-hover: #bdd8e7;
-		
+
 			--color-white: #fff;
 			--color-black: #000;
-		
+
 			--color-dark-text: #444;
 			--color-info-light: #cce5ff;
 			--color-debug-light: #cce5ff;
@@ -44,14 +44,14 @@
 			--color-alert-light: #fff3cd;
 			--color-warning-light: #fff3cd;
 			--color-error-light: #f8d7da;
-		
+
 			--color-info-dark: #4d86c4;
 			--color-debug-dark: #4d86c4;
 			--color-success-dark: #4a9c5d;
 			--color-alert-dark: #927f40;
 			--color-warning-dark: #927f40;
 			--color-error-dark: #da525d;
-		
+
 			--color-gray-0: #f9f9f9;
 			--color-gray-1: #e0e0e0;
 			--color-gray-2: #c7c7c7;
@@ -62,26 +62,26 @@
 			--color-gray-7: #4b4b4b;
 			--color-gray-8: #323232;
 			--color-gray-9: #191919;
-		
+
 			--font-primary: sans-serif;
 			--font-headings: 'Roboto Slab', serif;
-		
+
 			--spacing-gutter-medium: 3rem;
 			--spacing-gutter-large: 4rem;
 		}
-		
+
 		* {
 			/* Remove padding e margem padrão de todos os elementos, define o modelo de caixa para border-box */
 			padding: 0;
 			margin: 0;
 			box-sizing: border-box;
 		}
-		
+
 		html {
 			/* Define o tamanho da fonte base para 62.5% do tamanho padrão (geralmente 16px), facilitando o uso de rem */
 			font-size: 62.5%;
 		}
-		
+
 		body {
 			/* Define o tamanho da fonte padrão para 1.6rem (16px), fonte padrão e cor de fundo */
 			font-size: 1.6rem;
@@ -89,7 +89,7 @@
 			background-color: var(--color-gray-1);
 			color: var(--color-dark-text);
 		}
-		
+
 		h1,
 		h2,
 		h3,
@@ -99,21 +99,21 @@
 			/* Define a fonte das cabeçalhos para 'Roboto Slab' */
 			font-family: var(--font-headings);
 		}
-		
+
 		/* Header Page */
-		
+
 		.container {
 			/* Define a largura máxima do contêiner, centraliza e aplica padding */
 			max-width: 144rem;
 			margin: 0 auto;
 			padding: var(--spacing-gutter-medium);
 		}
-		
+
 		.main-header-container {
 			/* Define o fundo do cabeçalho principal */
 			background: var(--color-primary-dark);
 		}
-		
+
 		.main-logo {
 			/* Estiliza o logotipo principal, define o tamanho da fonte, cor, decoração de texto, alinhamento e layout */
 			font-size: 4rem;
@@ -126,14 +126,14 @@
 			width: fit-content;
 			margin: 0 auto;
 		}
-		
+
 		.main-logo-icon {
 			/* Adiciona margem direita ao ícone do logotipo */
 			margin-right: 2rem;
 		}
-		
+
 		/* Search Page */
-		
+
 		.search-form {
 			/* Estiliza o formulário de busca, define bordas, largura máxima, margem, borda arredondada e transições */
 			border: 0.2rem solid var(--color-primary-dark);
@@ -143,7 +143,7 @@
 			position: relative;
 			transition: all 350ms ease-in-out;
 		}
-		
+
 		.search-input,
 		.search-button {
 			/* Remove bordas e fundo, define padding e transições */
@@ -153,51 +153,51 @@
 			padding: 1rem;
 			transition: all 350ms ease-in-out;
 		}
-		
+
 		.search-input {
 			/* Define a largura total e padding direito */
 			width: 100%;
 			padding-right: 3rem;
 		}
-		
+
 		.search-button {
 			/* Posiciona o botão de busca no canto superior direito do formulário */
 			position: absolute;
 			top: 0;
 			right: 0;
 		}
-		
+
 		.search-button:focus {
 			/* Define o estilo quando o botão de busca está focado */
 			outline: 2px solid var(--color-primary);
 			background: rgba(0, 0, 0, 0.09);
 		}
-		
+
 		.search-form:focus-within {
 			/* Muda a borda e o fundo do formulário de busca quando está focado */
 			border-color: var(--color-primary);
 			background: var(--color-white);
 		}
-		
+
 		.search-form:focus-within .search-button {
 			/* Muda a cor do botão de busca quando o formulário está focado */
 			color: var(--color-primary);
 		}
-		
+
 		/* Cards */
-		
+
 		.main-content {
 			/* Define o padding superior da área de conteúdo principal */
 			padding-top: 0;
 		}
-		
+
 		.main-content-list {
 			/* Define a lista de conteúdo principal como grid, com colunas de largura mínima de 340px e espaçamento entre os itens */
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 			gap: var(--spacing-gutter-large);
 		}
-		
+
 		.recipe {
 			/* Define o estilo dos elementos de receita, incluindo fundo, sombra, escala e transições */
 			background: var(--color-gray-1);
@@ -205,63 +205,63 @@
 			transform: scale(1);
 			transition: all 300ms ease-in-out;
 		}
-		
+
 		.recipe img {
 			/* Define o tamanho máximo das imagens das receitas e bordas arredondadas */
 			max-width: 100%;
 			border-start-end-radius: 0.5rem;
 			border-start-start-radius: 0.5rem;
 		}
-		
+
 		.recipe-list-item {
 			/* Define a largura máxima dos itens da lista de receitas e bordas arredondadas */
 			max-width: 48rem;
 			border-radius: 0.5rem;
 		}
-		
+
 		.recipe-list-item:hover {
 			/* Define o estilo dos itens da lista de receitas ao passar o mouse, incluindo aumento da escala e sombra */
 			transform: scale(1.03);
 			box-shadow: -8px 8px 18px rgba(0, 0, 0, 0.25);
 		}
-		
+
 		.recipe-title-container {
 			/* Define o padding do contêiner do título da receita */
 			padding: var(--spacing-gutter-medium);
 			padding-bottom: calc(var(--spacing-gutter-large) / 2);
 		}
-		
+
 		.recipe-author {
 			/* Define o padding para o autor da receita */
 			padding: 0 var(--spacing-gutter-medium);
 		}
-		
+
 		.recipe-content {
 			/* Define o padding para o conteúdo da receita e alinha o texto justificadamente */
 			padding: var(--spacing-gutter-medium);
 			padding-top: calc(var(--spacing-gutter-medium) / 2);
 			text-align: justify;
 		}
-		
+
 		.recipe-author-item {
 			/* Define a cor e a margem direita dos itens de autoria da receita */
 			color: var(--color-gray-4);
 			margin-right: 1rem;
 			padding-bottom: calc(var(--spacing-gutter-medium) / 2);
 		}
-		
+
 		.recipe-author a {
 			/* Define a cor, decoração de texto e transição para os links do autor da receita */
 			color: var(--color-primary);
 			text-decoration: none;
 			transition: all 300ms ease-in-out;
 		}
-		
+
 		.recipe-author a:hover {
 			/* Muda a cor do link do autor da receita ao passar o mouse */
 			color: var(--color-primary-dark);
 		}
-		
+
 		.recipe-meta-container {
 			/* Define o estilo do contêiner de metadados das receitas, incluindo layout flexível e padding */
 			display: flex;
@@ -269,7 +269,7 @@
 			padding: var(--spacing-gutter-medium);
 			background: var(--color-gray-1);
 		}
-		
+
 		.recipe-meta {
 			/* Define o estilo dos elementos de metadados das receitas, incluindo layout flexível e alinhamento de texto */
 			display: flex;
@@ -278,11 +278,11 @@
 			flex-grow: 1;
 			text-align: center;
 		}
-		
+
 		.recipe-meta-title {
 			font-size: 1.6rem;
 		}
-		
+
 		.recipe-footer a {
 			/* Define o estilo do link no rodapé da receita, incluindo fundo, cor, decoração de texto, alinhamento e padding */
 			background: var(--color-primary-dark);
@@ -293,17 +293,17 @@
 			padding-top: calc(var(--spacing-gutter-large) / 2);
 			padding-bottom: calc(var(--spacing-gutter-large) / 2);
 		}
-		
+
 		.main-content-detail .recipe-list-item {
 			max-width: 84rem;
 			margin: 0 auto;
 		}
-		
+
 		.main-content-detail .recipe-list-item:hover {
 			transform: scale(1);
 			box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
 		}
-		
+
 		/* Botões */
 		.button {
 			/* Define o estilo básico do botão, incluindo exibição inline-block, padding, bordas arredondadas, alinhamento de texto, cursor e transições */
@@ -324,13 +324,13 @@
 			color: var(--color-white);
 			/* Define a cor do texto */
 		}
-		
+
 		.button-dark {
 			/* Define o estilo do botão com uma cor de fundo escura */
 			background-color: var(--color-primary-dark);
 			/* Cor de fundo escura */
 		}
-		
+
 		.button-full-width {
 			/* Define o botão para ocupar toda a largura disponível */
 			display: block;
@@ -340,7 +340,7 @@
 			text-align: center;
 			/* Centraliza o texto */
 		}
-		
+
 		.button:hover {
 			/* Define o estilo do botão ao passar o mouse, incluindo mudança de cor de fundo e leve elevação */
 			background-color: var(--color-primary);
@@ -348,19 +348,19 @@
 			transform: translateY(-0.1rem);
 			/* Eleva o botão levemente para criar um efeito de botão clicável */
 		}
-		
+
 		.button:active {
 			/* Define o estilo do botão ao clicar, incluindo leve afundamento */
 			transform: translateY(0.1rem);
 			/* Afunda o botão levemente ao clicar */
 		}
-		
+
 		.recipe-footer a:hover {
 			filter: brightness(2);
 		}
-		
+
 		/*FOOTER*/
-		
+
 		.main-footer {
 			display: flex;
 			align-items: center;
@@ -369,17 +369,16 @@
 			color: var(--color-white);
 			padding: var(--spacing-gutter-large);
 		}
-		
+
 		.main-footer a {
 			color: var(--color-white);
 			text-decoration: none;
 			transition: all 300ms ease-in-out;
 		}
-		
+
 		.main-footer a:hover {
 			filter: brightness(0.8);
 		}
-		
 	</style>
 
 
